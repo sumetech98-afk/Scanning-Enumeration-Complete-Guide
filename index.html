@@ -1,0 +1,829 @@
+<!-- ===== SCANNING & ENUMERATION GUIDE - CYBERSUME FULL SCREEN BLACK EDITION ===== -->
+<!-- Isko Blogger Post Editor mein HTML mode mein paste karein -->
+
+<style>
+    /* ===== FULL SCREEN WRAPPER ===== */
+    .cyber-post-wrapper {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 30px 40px 50px !important;
+        background: #000000 !important;
+        color: #ffffff;
+        border-radius: 0 !important;
+        box-sizing: border-box;
+        min-height: 100vh;
+    }
+    
+    @media (max-width: 1200px) {
+        .cyber-post-wrapper { padding: 25px 35px 45px !important; }
+    }
+    @media (max-width: 992px) {
+        .cyber-post-wrapper { padding: 22px 30px 40px !important; }
+    }
+    @media (max-width: 768px) {
+        .cyber-post-wrapper { padding: 18px 22px 35px !important; }
+    }
+    @media (max-width: 600px) {
+        .cyber-post-wrapper { padding: 15px 18px 30px !important; }
+    }
+    @media (max-width: 480px) {
+        .cyber-post-wrapper { padding: 12px 14px 25px !important; }
+    }
+    
+    .cyber-content {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    
+    /* ===== POST HEADER ===== */
+    .post-header-cyber {
+        margin-bottom: 35px;
+        padding-bottom: 25px;
+        border-bottom: 2px solid rgba(0, 255, 136, 0.1);
+        text-align: center;
+    }
+    
+    .post-badge {
+        display: inline-block;
+        padding: 6px 26px;
+        background: rgba(0, 255, 136, 0.08);
+        border: 1px solid #00d9ff;
+        border-radius: 50px;
+        color: #00d9ff;
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        margin-bottom: 20px;
+    }
+    
+    .post-title-cyber {
+        font-size: 38px;
+        font-weight: 900;
+        line-height: 1.15;
+        color: #ffffff !important;
+        margin: 12px 0 18px;
+        letter-spacing: -0.5px;
+        text-align: center;
+    }
+    
+    .post-title-cyber strong {
+        color: #00d9ff;
+    }
+    
+    .post-description {
+        color: #b0b8c8;
+        font-size: 17px;
+        line-height: 1.8;
+        max-width: 700px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    @media (max-width: 992px) {
+        .post-title-cyber { font-size: 30px; }
+    }
+    @media (max-width: 768px) {
+        .post-title-cyber { font-size: 24px; }
+        .post-description { font-size: 15px; }
+    }
+    @media (max-width: 480px) {
+        .post-title-cyber { font-size: 20px; }
+    }
+    
+    /* ===== HEADINGS ===== */
+    .cyber-post-wrapper h2 {
+        color: #ffffff !important;
+        font-size: 26px;
+        font-weight: 800;
+        margin-top: 40px;
+        margin-bottom: 16px;
+        border-left: 5px solid #00d9ff;
+        padding-left: 18px;
+        line-height: 1.3;
+    }
+    
+    .cyber-post-wrapper h3 {
+        color: #00ff88 !important;
+        font-size: 20px;
+        font-weight: 700;
+        margin: 25px 0 12px;
+    }
+    
+    .cyber-post-wrapper h4 {
+        color: #ffcc00 !important;
+        font-size: 17px;
+        font-weight: 700;
+        margin: 20px 0 10px;
+    }
+    
+    @media (max-width: 768px) {
+        .cyber-post-wrapper h2 { font-size: 22px; padding-left: 14px; }
+        .cyber-post-wrapper h3 { font-size: 18px; }
+        .cyber-post-wrapper h4 { font-size: 15px; }
+    }
+    @media (max-width: 480px) {
+        .cyber-post-wrapper h2 { font-size: 19px; padding-left: 12px; margin-top: 30px; }
+        .cyber-post-wrapper h3 { font-size: 16px; }
+        .cyber-post-wrapper h4 { font-size: 14px; }
+    }
+    
+    /* ===== PARAGRAPHS ===== */
+    .cyber-post-wrapper p {
+        color: #b0b8c8 !important;
+        font-size: 17px;
+        line-height: 1.9;
+        margin: 14px 0 18px;
+    }
+    .cyber-post-wrapper p strong { color: #00d9ff; }
+    @media (max-width: 768px) { .cyber-post-wrapper p { font-size: 16px; line-height: 1.8; } }
+    @media (max-width: 480px) { .cyber-post-wrapper p { font-size: 15px; line-height: 1.7; margin: 12px 0 14px; } }
+    
+    /* ===== LISTS ===== */
+    .cyber-post-wrapper ul, .cyber-post-wrapper ol {
+        color: #b0b8c8 !important;
+        font-size: 16px;
+        line-height: 2.2;
+        padding-left: 0;
+        margin: 12px 0 18px;
+        list-style: none;
+    }
+    .cyber-post-wrapper ul li, .cyber-post-wrapper ol li {
+        color: #b0b8c8 !important;
+        margin-bottom: 3px;
+        padding-left: 26px;
+        position: relative;
+    }
+    .cyber-post-wrapper ul li::before {
+        content: "▸";
+        color: #00d9ff;
+        position: absolute;
+        left: 0;
+        font-weight: 700;
+        font-size: 16px;
+    }
+    .cyber-post-wrapper ol {
+        counter-reset: item;
+    }
+    .cyber-post-wrapper ol li {
+        counter-increment: item;
+        padding-left: 32px;
+    }
+    .cyber-post-wrapper ol li::before {
+        content: counter(item) ".";
+        color: #00d9ff;
+        position: absolute;
+        left: 0;
+        font-weight: 700;
+        font-size: 15px;
+    }
+    @media (max-width: 480px) {
+        .cyber-post-wrapper ul, .cyber-post-wrapper ol { font-size: 15px; line-height: 2; }
+        .cyber-post-wrapper ul li { padding-left: 22px; }
+        .cyber-post-wrapper ol li { padding-left: 28px; }
+    }
+    
+    /* ===== CODE BLOCKS ===== */
+    .code-block {
+        margin: 12px 0 20px;
+        border-radius: 10px;
+        overflow: hidden;
+        background: #0a0a0a;
+        border: 1px solid rgba(0, 255, 136, 0.06);
+    }
+    .code-header {
+        background: #0d0d0d;
+        padding: 8px 18px;
+        border-bottom: 1px solid rgba(0, 255, 136, 0.05);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+    .code-header span:first-child {
+        color: #00d9ff;
+        font-size: 13px;
+        font-weight: 600;
+    }
+    .code-header span:last-child {
+        color: #6a7290;
+        font-size: 11px;
+    }
+    .code-block pre {
+        background: #000000;
+        padding: 18px 22px;
+        border-radius: 0;
+        overflow-x: auto;
+        margin: 0;
+        border: none;
+    }
+    .code-block pre code {
+        color: #b0b8c8;
+        font-family: 'Courier New', monospace;
+        font-size: 14px;
+        line-height: 1.8;
+        background: transparent;
+        white-space: pre-wrap;
+        word-break: break-all;
+    }
+    .code-block pre code .cmd { color: #00ff88; }
+    .code-block pre code .flag { color: #ffcc00; }
+    .code-block pre code .target { color: #00d9ff; }
+    .code-block pre code .comment { color: #6a7290; font-style: italic; }
+    .code-block pre code .var { color: #ff6b6b; }
+    @media (max-width: 480px) {
+        .code-block pre { padding: 14px 14px; }
+        .code-block pre code { font-size: 12px; line-height: 1.7; }
+        .code-header { padding: 6px 14px; }
+        .code-header span:first-child { font-size: 12px; }
+    }
+    
+    /* ===== TABLE ===== */
+    .cyber-post-wrapper table {
+        width: 100%;
+        border-collapse: collapse;
+        background: #0a0a0a;
+        border-radius: 12px;
+        overflow: hidden;
+        border: 1px solid rgba(0, 255, 136, 0.06);
+        margin: 15px 0 22px;
+        font-size: 14px;
+    }
+    .cyber-post-wrapper table thead tr { background: #00d9ff; }
+    .cyber-post-wrapper table thead tr th {
+        padding: 12px 18px;
+        text-align: left;
+        font-weight: 700;
+        font-size: 14px;
+        color: #000000;
+    }
+    .cyber-post-wrapper table tbody tr { border-bottom: 1px solid rgba(0, 255, 136, 0.03); }
+    .cyber-post-wrapper table tbody tr:last-child { border-bottom: none; }
+    .cyber-post-wrapper table tbody tr td {
+        padding: 10px 18px;
+        color: #b0b8c8;
+        font-size: 14px;
+    }
+    @media (max-width: 768px) {
+        .cyber-post-wrapper table { font-size: 13px; }
+        .cyber-post-wrapper table thead tr th { padding: 8px 12px; font-size: 12px; }
+        .cyber-post-wrapper table tbody tr td { padding: 8px 12px; font-size: 12px; }
+    }
+    @media (max-width: 480px) {
+        .cyber-post-wrapper table { font-size: 12px; }
+        .cyber-post-wrapper table thead tr th { padding: 6px 10px; font-size: 11px; }
+        .cyber-post-wrapper table tbody tr td { padding: 6px 10px; font-size: 11px; }
+    }
+    
+    /* ===== FEATURED BOX ===== */
+    .featured-box {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 25px;
+        background: #0a0a0a;
+        border: 1px solid rgba(0, 255, 136, 0.08);
+        border-radius: 14px;
+        padding: 22px 28px;
+        margin: 20px 0 30px;
+        justify-content: center;
+    }
+    .featured-box .featured-image img {
+        max-width: 160px;
+        height: auto;
+        border-radius: 12px;
+        border: 2px solid #00d9ff;
+        transition: 0.3s;
+    }
+    .featured-box .featured-image img:hover {
+        transform: scale(1.03);
+        box-shadow: 0 0 30px rgba(0, 217, 255, 0.15);
+    }
+    .featured-box .featured-cta { flex: 1; text-align: center; }
+    .featured-box .featured-cta p { color: #b0b8c8 !important; margin: 5px 0 10px !important; font-size: 15px; }
+    .featured-box .featured-cta .btn {
+        display: inline-block;
+        padding: 10px 30px;
+        border-radius: 8px;
+        background: linear-gradient(135deg, #00d9ff, #0099cc);
+        color: #000000;
+        font-weight: 700;
+        font-size: 14px;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+    .featured-box .featured-cta .btn:hover {
+        transform: scale(1.04);
+        box-shadow: 0 0 30px rgba(0, 217, 255, 0.2);
+    }
+    .featured-box .price-tag {
+        display: inline-block;
+        padding: 3px 16px;
+        border-radius: 50px;
+        background: rgba(255, 204, 0, 0.1);
+        border: 1px solid #ffcc00;
+        color: #ffcc00;
+        font-size: 13px;
+        font-weight: 700;
+        margin-top: 5px;
+    }
+    @media (max-width: 600px) {
+        .featured-box { flex-direction: column; text-align: center; padding: 18px; }
+        .featured-box .featured-image img { max-width: 140px; }
+        .featured-box .featured-cta .btn { width: 100%; }
+    }
+    
+    /* ===== TIP BOX ===== */
+    .tip-box {
+        background: rgba(255, 204, 0, 0.03);
+        border-left: 4px solid #ffcc00;
+        padding: 16px 22px;
+        margin: 16px 0 22px;
+        border-radius: 0 10px 10px 0;
+    }
+    .tip-box p { color: #ffcc00 !important; font-size: 15px; margin: 0 !important; }
+    @media (max-width: 480px) {
+        .tip-box { padding: 14px 16px; }
+        .tip-box p { font-size: 13.5px; }
+    }
+    
+    /* ===== COUNTERMEASURES BOX ===== */
+    .counter-box {
+        background: rgba(0, 255, 136, 0.03);
+        border: 1px solid rgba(0, 255, 136, 0.08);
+        border-radius: 12px;
+        padding: 18px 24px;
+        margin: 16px 0 22px;
+    }
+    .counter-box p {
+        color: #b0b8c8 !important;
+        font-size: 15px;
+        margin: 4px 0 !important;
+    }
+    .counter-box .check { color: #00ff88; font-weight: 700; }
+    @media (max-width: 480px) {
+        .counter-box { padding: 14px 16px; }
+        .counter-box p { font-size: 14px; }
+    }
+    
+    /* ===== HORIZONTAL RULE ===== */
+    .cyber-post-wrapper hr {
+        border: none;
+        border-top: 1px solid rgba(0, 255, 136, 0.06);
+        margin: 30px 0 32px;
+        background: transparent;
+        height: 1px;
+    }
+    
+    /* ===== SHARE SECTION ===== */
+    .share-section {
+        margin-top: 50px;
+        padding-top: 30px;
+        border-top: 1px solid rgba(0, 255, 136, 0.08);
+    }
+    .share-section p {
+        color: #6a7290 !important;
+        font-size: 15px;
+        text-align: center;
+        margin-bottom: 16px !important;
+    }
+    .share-buttons {
+        display: flex;
+        gap: 16px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .share-buttons a {
+        padding: 12px 28px;
+        border: 1px solid rgba(0, 255, 136, 0.12);
+        border-radius: 10px;
+        color: #b0b8c8 !important;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 500;
+        transition: 0.3s;
+        background: transparent;
+    }
+    .share-buttons a:hover {
+        border-color: #00d9ff;
+        color: #00d9ff !important;
+        background: rgba(0, 217, 255, 0.04);
+        transform: translateY(-2px);
+    }
+    @media (max-width: 480px) {
+        .share-buttons a { padding: 10px 18px; font-size: 13px; }
+        .share-section { margin-top: 35px; padding-top: 22px; }
+    }
+    
+    /* ===== BLOGGER OVERRIDES ===== */
+    .blog-posts { max-width: 100% !important; padding: 0 !important; }
+    .post-body { padding: 0 !important; background: #000000 !important; }
+    .post-body-content { background: #000000 !important; padding: 0 !important; }
+    .post-outer { background: #000000 !important; padding: 0 !important; margin: 0 !important; border: none !important; box-shadow: none !important; }
+    .post { background: #000000 !important; padding: 0 !important; margin: 0 !important; border: none !important; box-shadow: none !important; }
+    
+    /* ===== LINK STYLES ===== */
+    .cyber-post-wrapper a { color: #00d9ff; text-decoration: none; transition: 0.3s; }
+    .cyber-post-wrapper a:hover { color: #00ff88; text-decoration: underline; }
+    .text-center { text-align: center; }
+</style>
+
+<!-- ===== MAIN CONTENT ===== -->
+<div class="cyber-post-wrapper">
+
+    <div class="cyber-content">
+
+        <!-- ===== POST HEADER ===== -->
+        <div class="post-header-cyber">
+            <div class="post-badge">🔍 Scanning & Enumeration</div>
+            <h1 class="post-title-cyber">Scanning &amp; Enumeration <strong>Complete Guide</strong></h1>
+            <p class="post-description">
+                Complete guide to scanning and enumeration — techniques, tools, evasion, and countermeasures.
+            </p>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- INTRODUCTION -->
+        <!-- ============================================================ -->
+        <h2>Introduction to Scanning &amp; Enumeration</h2>
+
+        <p>
+            <strong>Scanning</strong> → Identifying live hosts, open ports, and services.<br/>
+            <strong>Enumeration</strong> → Extracting detailed info (users, shares, services, banners).
+        </p>
+
+        <div class="featured-box">
+            <div class="featured-image">
+                <a href="https://a.co/d/0b5aKHe5" target="_blank">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyfDsKeUMmadMLzlWe1d5wQ-hObES6RvImiuO40hsWxqTwpbYAhbamymaaoZNZ6Z-2XUcfVuHiC6tTSKcK1-aZyy1xbLe1-a9nHUEjJGWMLLURgQsSOGUsN9I28ts-0P_dyoas7h2R2rz8xqHRxL3rUBZa_1nz3FJIm_ncJhvYNuTGdCyJvqpVxa35hRID/s320/1000093253.png" alt="Nmap Book"/>
+                </a>
+               
+            </div>
+            <div class="featured-cta">
+                <p>📚 <strong style="color:#00d9ff;">Nmap Tools Guide</strong></p>
+                <p style="font-size:14px;color:#b0b8c8;">A Complete Network scanning guide about one of the Best Network scanner Tools — Nmap with Practical experience</p>
+                <a class="btn" href="https://a.co/d/0b5aKHe5" target="_blank">🛒 Buy Now on Amazon</a>
+            </div>
+        </div>
+
+        <h3>Key Objectives</h3>
+        <ul>
+            <li>Discover network topology (devices, firewalls, routers)</li>
+            <li>Identify vulnerable services (misconfigurations, outdated software)</li>
+            <li>Gather user accounts, shares, and system data for exploitation</li>
+        </ul>
+
+        <hr/>
+
+        <!-- ============================================================ -->
+        <!-- SCANNING TECHNIQUES -->
+        <!-- ============================================================ -->
+        <h2>Scanning Techniques &amp; Types</h2>
+
+        <h3>A. Host Discovery (Finding Live Systems)</h3>
+
+        <p><strong>Ping Sweep</strong> — Checks which IPs respond to ICMP</p>
+        <div class="code-block">
+            <div class="code-header">
+                <span>💻 Terminal</span>
+                <span>Ping Sweep</span>
+            </div>
+            <pre><code><span class="cmd">nmap -sn 192.168.1.0/24</span></code></pre>
+        </div>
+
+        <p><strong>ARP Scanning</strong> — Local network, bypasses firewalls</p>
+        <div class="code-block">
+            <div class="code-header">
+                <span>💻 Terminal</span>
+                <span>ARP Scan</span>
+            </div>
+            <pre><code><span class="cmd">arp-scan -l</span></code></pre>
+        </div>
+
+        <hr/>
+
+        <h3>B. Port Scanning (Finding Open Ports)</h3>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Scan Type</th>
+                    <th>Description</th>
+                    <th>Command</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>TCP Connect Scan</td>
+                    <td>Completes full 3-way handshake (noisy)</td>
+                    <td><code>nmap -sT 192.168.1.1</code></td>
+                </tr>
+                <tr>
+                    <td>SYN Stealth Scan</td>
+                    <td>Half-open scan (stealthier)</td>
+                    <td><code>nmap -sS 192.168.1.1</code></td>
+                </tr>
+                <tr>
+                    <td>UDP Scan</td>
+                    <td>Checks UDP services (slow but critical)</td>
+                    <td><code>nmap -sU 192.168.1.1</code></td>
+                </tr>
+                <tr>
+                    <td>ACK Scan</td>
+                    <td>Bypasses stateless firewalls</td>
+                    <td><code>nmap -sA 192.168.1.1</code></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr/>
+
+        <h3>C. Service &amp; OS Detection</h3>
+
+        <p><strong>Banner Grabbing</strong> — Identifies service versions</p>
+        <div class="code-block">
+            <div class="code-header">
+                <span>💻 Terminal</span>
+                <span>Banner Grabbing</span>
+            </div>
+            <pre><code><span class="cmd">nc -nv 192.168.1.1 80</span></code></pre>
+        </div>
+
+        <p><strong>OS Fingerprinting</strong> — Detects OS via TCP/IP stack</p>
+        <div class="code-block">
+            <div class="code-header">
+                <span>💻 Terminal</span>
+                <span>OS Detection</span>
+            </div>
+            <pre><code><span class="cmd">nmap -O 192.168.1.1</span></code></pre>
+        </div>
+
+        <hr/>
+
+        <h3>D. Vulnerability Scanning</h3>
+
+        <p><strong>Nmap NSE Scripts</strong> — Automated exploit checks</p>
+        <div class="code-block">
+            <div class="code-header">
+                <span>💻 Terminal</span>
+                <span>NSE Vuln Scan</span>
+            </div>
+            <pre><code><span class="cmd">nmap --script vuln 192.168.1.1</span></code></pre>
+        </div>
+
+        <ul>
+            <li><strong>Nessus/OpenVAS</strong> — Comprehensive vulnerability assessment</li>
+        </ul>
+
+        <hr/>
+
+        <!-- ============================================================ -->
+        <!-- ENUMERATION TECHNIQUES -->
+        <!-- ============================================================ -->
+        <h2>Enumeration Techniques</h2>
+
+        <h3>A. NetBIOS Enumeration (Windows Networks)</h3>
+        <ul>
+            <li>Finds shares, users, groups</li>
+        </ul>
+        <div class="code-block">
+            <div class="code-header">
+                <span>💻 Terminal</span>
+                <span>NetBIOS Enum</span>
+            </div>
+            <pre><code><span class="cmd">nmblookup -A 192.168.1.1</span>
+<span class="cmd">nbtscan 192.168.1.0/24</span></code></pre>
+        </div>
+
+        <h3>B. SNMP Enumeration</h3>
+        <ul>
+            <li>Extracts device info, configs via SNMP</li>
+        </ul>
+        <div class="code-block">
+            <div class="code-header">
+                <span>💻 Terminal</span>
+                <span>SNMP Enum</span>
+            </div>
+            <pre><code><span class="cmd">snmpwalk -c public -v1 192.168.1.1</span></code></pre>
+        </div>
+
+        <h3>C. LDAP Enumeration</h3>
+        <ul>
+            <li>Queries Active Directory users, groups</li>
+        </ul>
+        <div class="code-block">
+            <div class="code-header">
+                <span>💻 Terminal</span>
+                <span>LDAP Enum</span>
+            </div>
+            <pre><code><span class="cmd">ldapsearch -x -h 192.168.1.1 -b "dc=example,dc=com"</span></code></pre>
+        </div>
+
+        <h3>D. SMB Enumeration</h3>
+        <ul>
+            <li>Lists shares, users, permissions</li>
+        </ul>
+        <div class="code-block">
+            <div class="code-header">
+                <span>💻 Terminal</span>
+                <span>SMB Enum</span>
+            </div>
+            <pre><code><span class="cmd">smbclient -L //192.168.1.1</span>
+<span class="cmd">enum4linux -a 192.168.1.1</span></code></pre>
+        </div>
+
+        <h3>E. DNS Enumeration</h3>
+        <ul>
+            <li>Extracts DNS records, subdomains, mail servers</li>
+        </ul>
+        <div class="code-block">
+            <div class="code-header">
+                <span>💻 Terminal</span>
+                <span>DNS Enum</span>
+            </div>
+            <pre><code><span class="cmd">dnsrecon -d example.com</span></code></pre>
+        </div>
+
+        <hr/>
+
+        <!-- ============================================================ -->
+        <!-- ADVANCED SCANNING & EVASION -->
+        <!-- ============================================================ -->
+        <h2>Advanced Scanning &amp; Evasion</h2>
+
+        <h3>A. Firewall Evasion Techniques</h3>
+        <ul>
+            <li><strong>Fragmenting Packets</strong> — <code>-f</code> in Nmap</li>
+            <li><strong>Decoy Scanning</strong> — Hide among fake IPs</li>
+        </ul>
+        <div class="code-block">
+            <div class="code-header">
+                <span>💻 Terminal</span>
+                <span>Decoy Scan</span>
+            </div>
+            <pre><code><span class="cmd">nmap -D RND:10 192.168.1.1</span></code></pre>
+        </div>
+        <ul>
+            <li><strong>Timing Adjustments</strong> — <code>-T0</code> slow, <code>-T5</code> aggressive</li>
+        </ul>
+
+        <h3>B. Proxy &amp; VPN Scanning</h3>
+        <ul>
+            <li>Use Proxychains to anonymize scans</li>
+        </ul>
+        <div class="code-block">
+            <div class="code-header">
+                <span>💻 Terminal</span>
+                <span>Proxychains</span>
+            </div>
+            <pre><code><span class="cmd">proxychains nmap -sT 192.168.1.1</span></code></pre>
+        </div>
+
+        <hr/>
+
+        <!-- ============================================================ -->
+        <!-- HANDS-ON LAB -->
+        <!-- ============================================================ -->
+        <h2>Hands-On Lab Exercises</h2>
+
+        <h3>Exercise 1: Basic Network Scan</h3>
+        <div class="code-block">
+            <div class="code-header">
+                <span>💻 Terminal</span>
+                <span>Network Scan</span>
+            </div>
+            <pre><code><span class="cmd">nmap -sS -p 1-1000 -A 192.168.1.1</span></code></pre>
+        </div>
+        <ul>
+            <li>Interpret results: Open ports, services, OS</li>
+        </ul>
+
+        <h3>Exercise 2: SMB Enumeration</h3>
+        <div class="code-block">
+            <div class="code-header">
+                <span>💻 Terminal</span>
+                <span>SMB Enum</span>
+            </div>
+            <pre><code><span class="cmd">enum4linux -a 192.168.1.1</span></code></pre>
+        </div>
+        <ul>
+            <li>Find: Shares, users, password policies</li>
+        </ul>
+
+        <h3>Exercise 3: Vulnerability Scanning</h3>
+        <div class="code-block">
+            <div class="code-header">
+                <span>💻 Terminal</span>
+                <span>Vuln Scan</span>
+            </div>
+            <pre><code><span class="cmd">nmap --script vuln 192.168.1.1</span></code></pre>
+        </div>
+        <ul>
+            <li>Check for: Heartbleed, Shellshock, misconfigurations</li>
+        </ul>
+
+        <hr/>
+
+        <!-- ============================================================ -->
+        <!-- COUNTERMEASURES -->
+        <!-- ============================================================ -->
+        <h2>Countermeasures</h2>
+
+        <div class="counter-box">
+            <p><span class="check">✔</span> Disable <strong>unnecessary services</strong></p>
+            <p><span class="check">✔</span> Use <strong>strong firewall rules</strong> (block ICMP, restrict port scans)</p>
+            <p><span class="check">✔</span> <strong>Patch systems</strong> &amp; disable legacy protocols (SMBv1, SNMPv1)</p>
+            <p><span class="check">✔</span> <strong>Monitor logs</strong> for scanning activity</p>
+        </div>
+
+        <div class="featured-box">
+            <div class="featured-image">
+                <a href="https://a.co/d/0b5aKHe5" target="_blank">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyfDsKeUMmadMLzlWe1d5wQ-hObES6RvImiuO40hsWxqTwpbYAhbamymaaoZNZ6Z-2XUcfVuHiC6tTSKcK1-aZyy1xbLe1-a9nHUEjJGWMLLURgQsSOGUsN9I28ts-0P_dyoas7h2R2rz8xqHRxL3rUBZa_1nz3FJIm_ncJhvYNuTGdCyJvqpVxa35hRID/s320/1000093253.png" alt="Nmap Book"/>
+                </a>
+                
+            </div>
+            <div class="featured-cta">
+                <p>📚 <strong style="color:#00d9ff;">Nmap Tools Guide</strong></p>
+                <p style="font-size:14px;color:#b0b8c8;">A Complete Network scanning guide about one of the Best Network scanner Tools — Nmap with Practical experience</p>
+                <a class="btn" href="https://a.co/d/0b5aKHe5" target="_blank">🛒 Buy Now on Amazon</a>
+            </div>
+        </div>
+
+        <hr/>
+
+        <!-- ============================================================ -->
+        <!-- TOOLS SUMMARY -->
+        <!-- ============================================================ -->
+        <h2>Tools Summary</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Tool</th>
+                    <th>Purpose</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Nmap</td>
+                    <td>Network scanning, OS detection</td>
+                </tr>
+                <tr>
+                    <td>Netcat</td>
+                    <td>Banner grabbing, manual port checks</td>
+                </tr>
+                <tr>
+                    <td>enum4linux</td>
+                    <td>SMB/NetBIOS enumeration</td>
+                </tr>
+                <tr>
+                    <td>snmpwalk</td>
+                    <td>SNMP data extraction</td>
+                </tr>
+                <tr>
+                    <td>Nessus</td>
+                    <td>Automated vulnerability scanning</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr/>
+
+        <!-- ============================================================ -->
+        <!-- NEXT STEPS -->
+        <!-- ============================================================ -->
+        <h2>Next Steps</h2>
+
+        <ul>
+            <li>Proceed to <a href="https://www.cybersume.xyz/2025/03/system-hacking-exploitation.html" target="_blank"><strong>Module 4: System Hacking &amp; Exploitation</strong></a> (password cracking, privilege escalation)</li>
+            <li>Practice on <strong>Hack The Box (HTB)</strong> / <strong>TryHackMe (THM)</strong></li>
+        </ul>
+
+        <div class="tip-box">
+            <p>💡 Need deeper dives on any tool (e.g., Nmap scripting, Metasploit integration)? Let me know!</p>
+        </div>
+
+        <hr/>
+
+        <!-- ===== SHARE SECTION ===== -->
+        <div class="share-section">
+            <p>📤 Share this scanning & enumeration guide with your network</p>
+            <div class="share-buttons">
+                <a href="#" onclick="window.open('https://twitter.com/intent/tweet?text=Scanning%20%26%20Enumeration%20Complete%20Guide%20-%20Master%20Network%20Reconnaissance!%20%23Scanning%20%23Enumeration%20%23CyberSecurity%20%23Nmap','_blank');return false;">
+                    🐦 Twitter
+                </a>
+                <a href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(window.location.href),'_blank');return false;">
+                    📘 Facebook
+                </a>
+                <a href="#" onclick="window.open('https://www.linkedin.com/sharing/share-offsite/?url='+encodeURIComponent(window.location.href),'_blank');return false;">
+                    💼 LinkedIn
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+</div>
